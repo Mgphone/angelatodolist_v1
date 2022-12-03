@@ -4,8 +4,8 @@ const app = express();
 const date=require(__dirname+"/date.js")
 
 app.use(express.static('public'));
-var items=["Buy Food", "Cook Food", "Eat Food"];
-let workitems=["Fun"];
+const items=["Buy Food", "Cook Food", "Eat Food"];
+const workitems=["Fun"];
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}))
 app.get("/work",function (req,res){
